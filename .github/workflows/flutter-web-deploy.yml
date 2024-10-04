@@ -20,6 +20,7 @@ jobs:
         with:
           flutter-version: "3.19.3" # You can specify the version or use 'latest'
 
+
       # Install dependencies
       - name: Install dependencies
         run: flutter pub get
