@@ -1,12 +1,11 @@
 import 'dart:convert';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import '../../models/image_data.dart';
 
 
 class ApiService {
-  final String _apiKey = dotenv.env['API_KEY'] ?? '';
-  final String _baseUrl = dotenv.env['BASE_URL'] ?? '';
+  final String _apiKey = "45934804-2a2797f1568b2ac834b068bc1" ?? '';
+  final String _baseUrl = "https://pixabay.com/api/" ?? '';
 
 
   Future<List<ImageData>> fetchImages({String query = '', int page = 1}) async {
